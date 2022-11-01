@@ -1,0 +1,11 @@
+.all{
+	width: 400px;
+	height: 300px;
+	background-image: url(../img/tutu.jpg);
+	background-size: cover;
+}
+input{
+	height:20px;
+	width:200px;
+	margin-top: 20px;
+}

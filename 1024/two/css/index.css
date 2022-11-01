@@ -1,0 +1,30 @@
+.main{
+	width: 200px;
+	height: 100px;
+	border: 2px #ccc solid;
+}
+a{
+	font-size: 22px;
+	color:blue;
+}
+b{
+	font-size: 25px;
+}
+.logon{
+	width: 300px;
+	height: 150px;
+	background-color: rgb(112, 65, 65);
+}
+.logon form{
+	padding-top: 10px;
+	margin-left: 20px;
+}
+.login{
+	background-color: rgb(44, 151, 151);
+	width: 270px;
+	height: 200px;
+	border-radius: 25px;
+}
+h4{
+	padding-top: 20px;
+}
