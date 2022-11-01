@@ -1,11 +1,17 @@
-.all{
-	width: 400px;
-	height: 300px;
-	background-image: url(../img/tutu.jpg);
+.msg{
+	margin-left: 30%;
+	margin-top: 10%;
+	width: 600px;
+	height: 450px;
+	background-image: url(../img/previewFix.jpg);
 	background-size: cover;
 }
 input{
 	height:20px;
-	width:200px;
-	margin-top: 20px;
+	width:100%;
+	margin-top: 75%;
+	
+}
+html{
+	background-color: rgb(99, 193, 193);
 }

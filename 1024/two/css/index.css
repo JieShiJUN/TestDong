@@ -1,25 +1,26 @@
-.main{
+.divone{
 	width: 200px;
 	height: 100px;
 	border: 2px #ccc solid;
 }
 a{
 	font-size: 22px;
-	color:blue;
+	color:rgb(0, 0, 0);
+	list-style: none;
 }
 b{
 	font-size: 25px;
 }
-.logon{
+.divzhuce{
 	width: 300px;
 	height: 150px;
 	background-color: rgb(112, 65, 65);
 }
-.logon form{
+.divzhuce form{
 	padding-top: 10px;
 	margin-left: 20px;
 }
-.login{
+.divlogin{
 	background-color: rgb(44, 151, 151);
 	width: 270px;
 	height: 200px;
