@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 25%;
+	height: 100%;
+}
+.head{
+	width: 270px;
+	height: 60px;
+	background-color: blue;
+	position: relative;
+}
+h4{
+	font-family:"arial, helvetica, sans-serif";
+	position: absolute;
+	bottom: 16px;
+	right: 0;
+}

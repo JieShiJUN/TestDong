@@ -1,0 +1,45 @@
+#one{
+	width: 50px;
+	height: 50px;
+	background: blue;
+	line-height:40px;
+	text-align: center;
+	transition:width 2s;
+	-webkit-transition:width 2s; /* Safari */
+}
+#two{
+	width: 50px;
+	height: 50px;
+	background: red;
+	line-height:40px;
+	text-align: center;
+    margin-top: 10px;
+	transition:width 2s;
+	-webkit-transition:width 2s; /* Safari */
+}
+#one:hover
+{
+	width:150px;
+	text-align: end;
+}
+#two:hover
+{
+	width:150px;
+	text-align: end;
+}
+
+div span{	
+    display:none; 
+    position: absolute;
+    left: 0px;   
+    font-family: "微软雅黑";
+}
+div:hover span{
+display:block;
+}
+.one{
+	top: 0px;
+}
+.two{
+	top: 117px;
+}
