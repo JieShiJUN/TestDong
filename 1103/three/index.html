@@ -1,0 +1,118 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>表作业</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
+    <script>
+        function yz(x,y){
+            if(typeof x=='string'){
+                if(document.getElementById(x).value!=""){
+                document.getElementById(y).value=""
+            }else{
+                alert("data")
+                document.getElementById(y).value='x'
+            }
+            }else{
+                if(x.value!=undefined){
+              }
+            }
+            document.getElementById(y).value=""
+          
+        }
+        
+        function tj(){
+             if(document.getElementById("text1").value!=""||document.getElementById("text2").value!=""||document.getElementById("text3").value!=""||document.getElementById("text4").value!=""||document.getElementById("text5").value!=""||document.getElementById("text6").value!=""||document.getElementById("text7").value!=""){
+            alert("有遗漏项未填写")
+            }
+            else{
+            alert("完成");
+            location.reload()
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <table border=1>
+    <tbody><tr>
+        <td>姓名:</td>
+        <td><input id="UN" onchange="yz('UN','text1')" type="text" name="userName"></td>
+        <td><input class="x"  type="text" name="PANDUAN" id="text1"  value="X"></td>
+        
+    </tr>
+    <tr>
+        <td>年龄:</td>
+        <td><input type="text" id="ln" onchange="yz('ln','text2')" name="years"></td>
+        <td><input class="x"  type="text" name="PANDUAN" id="text2" value="X"></td>
+    </tr>
+    <tr>
+        <td>性别：</td>
+        <td align="center">
+            <input id="xb" onclick="yz('xb','text3')" type="radio" name="sex" value="1">男     <input onclick="xb()" id="xb" type="radio" name="sex" value="0">女
+        </td>
+        <td><input class="x" type="text" name="PANDUAN" id="text3"  value="X"></td>
+    </tr>
+    <tr>
+        <td>血型：</td>
+        <td align="center">
+            <input onclick="yz(this,'text4')" type="radio" name="blood_type" value="0">A  
+            <input onclick="yz(this,'text4')" type="radio" name="blood_type" value="0">B    
+             <input onclick="yz(this,'text4')" type="radio" name="blood_type" value="0">AB     
+             <input onclick="yz(this,'text4')" type="radio" name="blood_type" value="0">O
+        </td>
+        <td><input class="x" type="text" name="PANDUAN" id="text4"  value="X"></td>
+    </tr>
+    <tr>
+        <td>性格:</td>
+        <td>
+            <input onclick="yz(this,'text5')" type="checkbox" name="hobby" value="0">热情大方&nbsp;
+            <input onclick="yz(this,'text5')" type="checkbox" name="hobby" value="0">温柔体贴&nbsp;
+            <input onclick="yz(this,'text5')" type="checkbox" name="hobby" value="0">多情善感&nbsp;
+        </td>
+        <td><input class="x"  type="text" name="PANDUAN" id="text5"  value="X"></td>
+    </tr>
+    <tr>
+        <td>文件:</td>
+        <td>
+            <input onmouseout="yz('wenjian','text6')" id="wenjian" type="file" multiple="" accept="docx/*">
+        </td>
+        <td><input class="x"  type="text" name="PANDUAN" id="text6"  value="X"></td>
+    </tr>
+    <tr>
+        <td>自我介绍:</td>
+        <td>
+            <textarea onchange="yz('zwjs','text7')" id="zwjs" name="comment" rows="5" cols="30"></textarea>
+        </td>
+        <td><input class="x"  type="text" name="PANDUAN" id="text7"  value="X"></td>
+        <script>
+         
+        </script>
+    </tr>
+    <tr>
+        <td>城市:</td>
+        <td>
+            <select name="degree">
+                <!-- <option value="">--请选择--</option> -->
+                <option value="0">成都市</option>
+                <option value="0">北京市</option>
+                <option value="0">天津市</option>
+                <option value="0">重庆市</option>
+                <option value="0">其他</option>
+            </select>
+        </td>
+        <td><input name="PANDUAN" id="text8"  value=""></td>
+    </tr>
+    <tr>
+        <th></th>
+        <th>
+            <input onclick="tj()" type="submit" value="提交">
+            <input type="reset" value="重置">
+        </th>
+    </tr>
+    <script>
+  
+    </script>
+    </tbody></table>
+    
+
+</body></html>

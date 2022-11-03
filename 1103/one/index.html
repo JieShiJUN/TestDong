@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册界面</title>
+		<link type="text/css" rel="stylesheet" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="divzhuce">
+			<form>
+		用户名	<input id="name" type="text" /><br /><br />
+		
+	    密码<input id="password" type="text" /><br /><br />
+		确认密码<input id="passwordtoo" type="text" /><br /><br />
+		<input type="button" value="注册" onclick="checkName()"/>
+		</form>
+		</div>
+
+
+		
+	<script>
+
+		
+		   function checkName(){
+			var userNameIpt = document.getElementById("name").value;
+	   var passwordIpt = document.getElementById("password").value;
+	   var passwordIpttoo = document.getElementById("passwordtoo").value;
+		   	if ((userNameIpt!=null|| userNameIpt!="")) {
+		   		if (passwordIpt.length>6) {
+		   			if(passwordIpt!=passwordIpttoo){
+		   				alert("两次密码不一致");
+		   			}else{
+						alert("注册成功");
+					}
+		   } else {
+		   	alert("密码少于六位");
+		   }
+		   } else {
+		   	alert("你用户名输错了  不符合规范");
+		   }
+	   
+		   }
+
+   </script>
+	</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>复制</title>
+</head>
+<body>
+    
+        <table>
+            <tbody><tr>
+                <td><input type="text" id="one"></td>
+                <td><button onclick="copyins()">复制</button></td>
+                <td><input type="text" id="two"></td>
+            </tr>
+            <tr>
+                <td><input id="textdata" style="border: 0;color:blue;" readonly=""></td>
+            </tr>
+        </tbody></table>
+    
+        <script>
+            function copyins(){
+                document.getElementById("two").value=document.getElementById("one").value
+                    document.getElementById("textdata").value="复制成功"
+            }
+        </script>
+</body></html>
